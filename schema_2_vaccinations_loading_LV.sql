@@ -18,6 +18,7 @@ create table us_state_vaccinations_cleansed (
 	
 );
 
+select * from us_state_vaccinations_cleansed
 
 create table us_state_vaccinations_cleansed_group as (
 select state, sum(total_vaccinations) as total_vaccinations, sum(total_distributed) as total_distributed, sum(people_vaccinated) as people_vaccinated, sum(people_fully_vaccinated) as people_fully_vaccinated, sum(daily_vaccinations) as daily_vaccinations
